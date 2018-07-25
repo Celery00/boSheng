@@ -116,12 +116,12 @@ input::-webkit-input-placeholder {
 }
 
 .flex{
-	display: -webkit-box;
   display: -webkit-flex;
-  display: -moz-box;
   display: -moz-flex;
- 	display: -ms-flexbox;
  	display: flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -moz-box;
 }
 .pull-left{
 	float:left;
@@ -129,8 +129,11 @@ input::-webkit-input-placeholder {
 .pull-right{
 	float:right;
 }
-
+.hover_class{
+  color:#f7bf18!important;
+}
 .container-wrap{
+  position: relative;
   min-width: 1200px;
   margin:0 auto;
   width: 100%;
@@ -139,17 +142,108 @@ input::-webkit-input-placeholder {
   max-width: 1000px;
   margin:0 auto;
 }
+/* 顶部容器 */
 .container-header{
   background: #fff;
 }
 .container-header .header{
+  background:url("../../img/top-back.png") no-repeat center;
   overflow: hidden;
-  padding: 20px 0;
+  background-size: cover;
+  padding:15px 0;
 }
 .container-header .header .logo{
-  height:97px;
-}
-.container-header .header .tell{
-  height:45px;
+  height:69px;
   vertical-align:middle;
 }
+.container-header .header .tell{
+  margin-top: 15px;
+  height:39px;
+  vertical-align:middle;
+}
+.container-header .nav{
+  background:#222;
+  color:#fff;
+  font-size:15px;
+  width: 100%;
+}
+.container-header .nav ul li{
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex:1;
+  text-align: center;
+  border-right: 1px solid #fff;
+}
+.container-header .nav ul li:last-child{
+  border: none;
+}
+.container-header .nav ul li a{
+  display:block;
+  line-height:40px;
+  color:#eee;
+}
+
+.banner img{
+  width: 100%;
+}
+
+
+/*底部容器*/
+.container-footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:url(../../img/back1.jpg);
+  margin-bottom:-259px;
+}
+.container-footer .nav-footer{
+  background:#222;
+}
+.container-footer .nav-footer li{
+  line-height:40px;
+  text-align:center;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex:1;
+}
+.container-footer .nav-footer li a{
+  display:block;
+  color:#fff;
+  font-size:14px;
+}
+.container-footer .back-img{
+  width: 200px;
+  height:219px;
+  background:url(../../img/shao.png) no-repeat;
+  background-size:contain;
+  /* margin-right:20px;*/
+}
+.container-footer .text{
+  font-size:13px;
+  line-height:28px;
+  margin-top:15px;
+  color:#ccc;
+}
+.container-footer .text p span:first-child{
+  color:#f1f1f1;
+}
+.container-footer .box-footer .text .p{
+  margin-top:10px;
+}
+.container-footer .box-footer .text .p span{
+  color:#555;
+}
+.container-footer .box-footer .pull-right{
+  height:200px;
+  width: 260px;
+  margin-top:10px;
+  background:url(../../img/footer_map.png) no-repeat center;
+  background-size:contain;
+}
+
+/* 首页 */
