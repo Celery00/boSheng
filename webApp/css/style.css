@@ -163,7 +163,7 @@ input::-webkit-input-placeholder {
   background-size: cover;
   -webkit-background-size: cover;/* 兼容Webkit内核浏览器如Chrome和Safari */
   -o-background-size: cover;/* 兼容Opera */
-  padding:15px 0;
+  padding:15px;
 }
 .container-header .header .logo{
   height:39px;
