@@ -156,12 +156,12 @@ input::-webkit-input-placeholder {
 /* 顶部容器 */
 .container-header{
   // background: #fff;
+}
+.container-header .header{
   position:fixed;
   top:0;
   right:0;
   left:0;
-}
-.container-header .header{
   background:url("../../img/top-back.png") no-repeat center;
   overflow: hidden;
   background-size: cover;
@@ -170,6 +170,7 @@ input::-webkit-input-placeholder {
   padding:10px;
   color: #fff;
   line-height: 27px;
+  z-index: 10;
 }
 .container-header .header .layui-icon{
 	font-size:20px;
@@ -182,4 +183,100 @@ input::-webkit-input-placeholder {
 .container-header .header .h2{
 	font-weight:bold;
 	font-size:18px;
+}
+.container-header .nav{
+	position:fixed;
+	top:47px;
+	left: 0;
+	// right:-100%;
+	bottom: 0;
+	background:rgb(0,0,0,.3);
+	z-index:10;
+}
+.container-header .nav .nav_ul{
+	position:absolute;
+	top: 0;
+	left: 0;
+	bottom:0;
+	overflow-y:auto;
+	-webkit-overflow-scrolling:touch;
+	background:rgb(39,43,36);
+	width: 60%;
+}
+.container-header .nav .nav_ul li{
+	border-bottom: 1px solid;
+	line-height:55px;
+	padding:0 15px;
+}
+.container-header .nav .nav_ul li a{
+	display:block;
+	color: #fff;
+	overflow:hidden;
+}
+
+/* 轮播 */
+.banner img{
+	width: 100%;
+}
+
+/*内容容器*/
+.container-main{
+	padding-top:47px;
+}
+
+/*首页*/
+.main .one{
+  background:url(../../img/back1.jpg);
+  padding:15px 10px;
+}
+.main .one .back-title{
+  text-align:center;
+  height:26px;
+  margin-bottom:20px;
+  color:#fff;
+}
+.main .one .back-title img{
+	height:100%;
+}
+.main .one .fuwu{
+  overflow:hidden;
+}
+.main .one .fuwu li{
+  float:left;
+  width: 50%;
+  padding:0 12px;
+  color:#fff;
+  margin-bottom:10px;
+}
+.main .one .fuwu li h4{
+  text-align:center;
+}
+.main .one .fuwu li a{
+  display:block;
+  position: relative;
+  margin-bottom:10px;
+  border: 1px solid #333;
+  padding:8px;
+}
+.main .one .fuwu li img{
+  height:100%;
+  width: 100%;
+}
+
+.anli{
+	height:100%;
+	width: 100%;
+	overflow:hidden;
+}
+.anli_ul{
+	overflow-x:auto;
+	-webkit-overflow-scrolling:touch;
+}
+.anli_ul li{
+	float:left;
+	height:100%;
+	margin-right:10px; 
+}
+.anli_ul li img{
+	width: 142px;
 }
