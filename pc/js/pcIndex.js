@@ -1,3 +1,8 @@
+/*
+@Name:广州博盛;
+@Time:2018-07-24;
+@Author：;
+*/
 
 $(function(){
 	//顶部轮播图
@@ -100,7 +105,7 @@ $(function(){
 
 	// 回到顶部
 	$(window).scroll(function(){
-		if($(window).scrollTop()>=100){
+		if($(window).scrollTop()>=200){
 			$('.layui-fixbar li').fadeIn(300);
 		}else{
 			$('.layui-fixbar li').fadeOut(300);
