@@ -208,6 +208,9 @@ input::-webkit-input-placeholder {
   line-height:40px;
   color:#eee;
 }
+.container-header .nav ul li a:hover{
+  color: #f7bf18;
+}
 
 .banner img{
   width: 100%;
@@ -239,6 +242,9 @@ input::-webkit-input-placeholder {
   display:block;
   color:#fff;
   font-size:14px;
+}
+.container-footer .nav-footer li a:hover{
+  color: #f7bf18;
 }
 .container-footer .back-img{
   width: 200px;
@@ -395,13 +401,34 @@ input::-webkit-input-placeholder {
   border:1px solid;
 }
 #anli_01.layui-carousel>[carousel-item]>*,
-#anli_02.layui-carousel>[carousel-item]>*{
+#anli_02.layui-carousel>[carousel-item]>*,
+#anli_lunbo.layui-carousel>[carousel-item]>*{
   background:none;
   text-align:center;
 }
 #anli_01.layui-carousel>[carousel-item]:before,
 #anli_02.layui-carousel>[carousel-item]:before{
   content:'';
+}
+#anli_lunbo{
+  padding:80px 0;
+  background:none;
+  margin:0 auto;
+}
+.layui-icon-close{
+  position:absolute;
+  top: 20px;
+  right:50%;
+  color: #fff;
+  border: 2px solid #fff;
+  background:#333;
+  border-radius: 50%;
+  font-size: 26px;
+  -webkit-transform: translateX(50%);
+     -moz-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+       -o-transform: translateX(50%);
+          transform: translateX(50%);
 }
 .anli_03,.anli_04{
   margin:40px 0;
@@ -653,7 +680,6 @@ input::-webkit-input-placeholder {
   top: 0;
   left: 0;
   right:0;
-  padding:100px 0;
   height:100%;
   text-align:center;
 }

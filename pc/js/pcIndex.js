@@ -43,6 +43,21 @@ $(function(){
 	  	});
 	});
 
+	// 案例弹框轮播
+	layui.use('carousel', function(){
+	  	var carousel = layui.carousel;
+	  	//建造实例
+	  	carousel.render({
+	    	elem: '#anli_lunbo'
+	    	,width: '60%' //设置容器宽度
+	    	,height:'100%' 
+	    	,autoplay:false 
+	    	,arrow: 'always' //始终显示箭头
+	    	,anim: 'default' //切换动画方式
+	    	,indicator:'none'
+	  	});
+	});
+
 	// 放大图片
 	$(document).on('mouseover','#anli_01 img,#anli_02 img,.case_ul li img',function(){
 		$(this).addClass('scale');
@@ -57,7 +72,7 @@ $(function(){
 		$('body').addClass('overflow');
 	});
 	// 关闭弹框
-	$(document).on('click','.caseModal',function(){
+	$(document).on('click','.caseModal .layui-icon-close',function(){
 		$('.caseModal').hide();
 		$('body').removeClass('overflow');
 	});
