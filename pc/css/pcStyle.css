@@ -653,21 +653,23 @@ input::-webkit-input-placeholder {
   top: 0;
   left: 0;
   right:0;
-  padding:80px 0;
-  // width: 300px;
+  padding:120px 0;
+  height:100%;
+  text-align:center;
 }
 .caseModal .caseModal_center .img{
-  margin:0 auto;
   width:100% ;
   height: 100%;
-  background:url(../../img/anli_01.png) no-repeat center;
-  background-size:cover;
-  position: relative;
-  overflow:hidden;
+}
+.caseModal .caseModal_center .img .div{
+    display:inline-block;
+    overflow:hidden;
+    position:relative;
+    height:100%;
 }
 .caseModal .caseModal_center .img img{
-  width: 100%;
-  // height: 100%;
+  // width: 100%;
+  height: 100%;
 }
 .caseModal .caseModal_center .img p{
   position: absolute;
@@ -688,7 +690,7 @@ input::-webkit-input-placeholder {
 /*公用的左边*/
 .all_left{
   width: 250px;
-  margin-right:26px;
+  // margin-right:26px;
   color:#eee;
 }
 .all_left .title{
@@ -748,7 +750,8 @@ input::-webkit-input-placeholder {
 }
 
 .all_right{
-  width: 750px;
+  width: 850px;
+  padding-left:26px;
 }
 .all_right .all_title{
   overflow: hidden;
@@ -829,12 +832,13 @@ input::-webkit-input-placeholder {
   margin:10px 0;
   height: 268px;
 }
-.message_box .message_img img{
+.message_box .message_img .img{
+  background:url(../../img/03.png) no-repeat center;
   width: 404px;
   height: 100%;
 }
 .message_box .message_img .message_back{
-  width: 364px;
+  width: 420px;
   background:rgb(152,115,39);
   color: #fff;
   font-size: 15px;
@@ -851,7 +855,8 @@ input::-webkit-input-placeholder {
 .message_map .map_img{
   margin-top:10px;
   margin-bottom:30px;
-  width: 100%;
+  height: 550px;
+  background:url(../../img/map.png) no-repeat center;
 }
 
 /* 新闻页面 */
@@ -864,7 +869,7 @@ input::-webkit-input-placeholder {
 }
 .news_box .news_title .news_title_text{
   padding:0 20px;
-  width: 527px;
+  // width: 627px;
   font-size:12px;
 }
 .news_title .news_title_text a{
@@ -877,7 +882,7 @@ input::-webkit-input-placeholder {
   cursor:pointer;
 }
 .news_title .news_title_text .p{
-  color:#555;
+  color:#888;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
@@ -895,6 +900,7 @@ input::-webkit-input-placeholder {
   overflow: hidden;
   line-height:26px;
   border-bottom: 1px dashed #555;
+  color:#eee;
 }
 .news_box .news_ul li a{
   color:#eee;
