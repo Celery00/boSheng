@@ -407,7 +407,8 @@ input::-webkit-input-placeholder {
   text-align:center;
 }
 #anli_01.layui-carousel>[carousel-item]:before,
-#anli_02.layui-carousel>[carousel-item]:before{
+#anli_02.layui-carousel>[carousel-item]:before,
+#anli_lunbo.layui-carousel>[carousel-item]:before{
   content:'';
 }
 #anli_lunbo{
