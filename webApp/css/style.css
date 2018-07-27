@@ -156,6 +156,10 @@ input::-webkit-input-placeholder {
 /* 顶部容器 */
 .container-header{
   // background: #fff;
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
 }
 .container-header .header{
   background:url("../../img/top-back.png") no-repeat center;
@@ -163,9 +167,19 @@ input::-webkit-input-placeholder {
   background-size: cover;
   -webkit-background-size: cover;/* 兼容Webkit内核浏览器如Chrome和Safari */
   -o-background-size: cover;/* 兼容Opera */
-  padding:15px;
+  padding:10px;
+  color: #fff;
+  line-height: 27px;
+}
+.container-header .header .layui-icon{
+	font-size:20px;
 }
 .container-header .header .logo{
-  height:39px;
+  height:27px;
   vertical-align:middle;
+  margin:0 10px;
+}
+.container-header .header .h2{
+	font-weight:bold;
+	font-size:18px;
 }
