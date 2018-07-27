@@ -295,7 +295,7 @@ input::-webkit-input-placeholder {
 	margin-bottom:15px;
 }
 .encyclopedias_ul li{
-	padding-bottom:10px;
+	padding:10px 0;
 	border-bottom: 1px dashed #eee;
 }
 .encyclopedias_ul li img{
@@ -337,10 +337,10 @@ input::-webkit-input-placeholder {
 }
 .choice_ul li .img_01{
 	width: 10%;
+	text-align:center;
 }
 .choice_ul li .img_01 img{
   width:100%;
-  margin: 0 5px;
 }
 
 .choice_ul li .img_02{
