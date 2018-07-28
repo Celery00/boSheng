@@ -34,13 +34,18 @@ $(function () {
 		// $('.container-wrap').removeClass('overflow');
 		$('.container-main').animate({marginLeft:'0'});
 	});
-	$(document).bind('touchstart',function(e){
-		 e.stopPropagation()
-		console.log(0);
+	
+	$('.container-header .nav').bind('touchstart',function(e){
+		// console.log(0);
 		$('.container-header .nav').animate({width:'0'});
 		$('.header .layui-icon').removeClass('layui-icon-shrink-right').addClass('layui-icon-spread-left');
 		// $('.container-wrap').removeClass('overflow');
 		$('.container-main').animate({marginLeft:'0'});
+	});
+	$('.container-header .nav .nav_ul').bind('touchstart',function(e){
+		// console.log(1);
+		 e.stopPropagation();
+
 	});
 
 	//顶部轮播图
