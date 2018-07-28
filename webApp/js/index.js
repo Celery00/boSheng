@@ -56,21 +56,6 @@ $(function () {
 
 	});
 
-	// 案例弹框轮播
-	layui.use('carousel', function(){
-	  	var carousel = layui.carousel;
-	  	//建造实例
-	  	carousel.render({
-	    	elem: '#anli_lunbo'
-	    	,width: '100%' //设置容器宽度
-	    	,height:'100%' 
-	    	,autoplay:false 
-	    	,arrow: 'always' //始终显示箭头
-	    	,anim: 'default' //切换动画方式
-	    	,indicator:'none'
-	  	});
-	 });
-
 	// 案例弹框的显示
 	$(document).on('click','.anli .anli_ul li',function(){
 		$('.caseModal').show();
@@ -79,5 +64,11 @@ $(function () {
 	$(document).on('click','.caseModal .close .layui-icon-close',function(){
 		$('.caseModal').hide();
 		$('body').removeClass('overflow');
-	})
+	});
+	// 案例弹框轮播
+	var mySwipe2r = new Swiper ('.swiper-container2', {
+	    loop: true,
+	    prevButton:'.swiper-button-prev',
+		nextButton:'.swiper-button-next',
+	  }) 
 })

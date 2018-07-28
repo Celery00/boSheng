@@ -423,20 +423,11 @@ input::-webkit-input-placeholder {
 	right:0;
 	bottom:0;
 }
-.caseModal .caseModal_center #anli_lunbo{
+.caseModal .caseModal_center .anli_lunbo{
 	background:none;
+	height:100%;
 }
-#anli_lunbo .layui-carousel-arrow{
-	border: 1px solid #fff;
-}
-#anli_lunbo.layui-carousel>[carousel-item]>*{
-  background:none;
-  text-align:center;
-}
-#anli_lunbo.layui-carousel>[carousel-item]:before{
-  content:'';
-}
-.caseModal .caseModal_center .img img{
+.caseModal .caseModal_center  img{
 	position:absolute;
 	left: 0;
 	top: 50%;
