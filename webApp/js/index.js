@@ -26,6 +26,8 @@ $(function () {
 		$(this).removeClass('layui-icon-spread-left').addClass('layui-icon-shrink-right');
 		$('.container-wrap').addClass('overflow');
 		$('.container-main').animate({marginLeft:'60%'});
+		$('.all_nav').animate({width:'0'});
+		$('.all_title .layui-icon').removeClass('layui-icon-spread-left').addClass('layui-icon-shrink-right');
 	});
 	// 隐藏
 	$(document).on('click','.header .layui-icon.layui-icon-shrink-right',function(){
@@ -89,4 +91,37 @@ $(function () {
 	    ,count: 40 //数据总数，从服务端得到
 	  });
 	});
+
+	//右边导航
+	// 显示
+	$(document).on('click','.all_title .layui-icon.layui-icon-shrink-right',function(){
+		$('.all_nav').animate({width:'100%'});
+		$(this).removeClass('layui-icon-shrink-right').addClass('layui-icon-spread-left');
+		$('.container-wrap').addClass('overflow');
+		$('.container-main').animate({marginLeft:'-60%'});
+	});
+
+	// 隐藏
+	function allNavShow(){
+		$('.all_nav').animate({width:'0'});
+		$('.all_title .layui-icon').removeClass('layui-icon-spread-left').addClass('layui-icon-shrink-right');
+		$('.container-wrap').removeClass('overflow');
+		$('.container-main').animate({marginLeft:'0'});
+	}
+	
+	$('.all_nav').bind('touchstart',function(e){
+		// console.log(0);
+		allNavShow();
+	});
+	$('.all_ul').bind('touchstart',function(e){
+		// console.log(1);
+		 e.stopPropagation();
+	});
+	// 换样式
+	$(document).on('click','.all_ul li a',function(){
+		$('.all_ul li a').removeClass('text_di');
+		$(this).addClass('text_di');
+		allNavShow();
+	})
+
 })
