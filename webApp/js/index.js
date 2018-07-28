@@ -70,4 +70,14 @@ $(function () {
 	    	,indicator:'none'
 	  	});
 	 });
+
+	// 案例弹框的显示
+	$(document).on('click','.anli .anli_ul li',function(){
+		$('.caseModal').show();
+		$('body').addClass('overflow');
+	});
+	$(document).on('click','.caseModal .close .layui-icon-close',function(){
+		$('.caseModal').hide();
+		$('body').removeClass('overflow');
+	})
 })

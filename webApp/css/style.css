@@ -412,6 +412,7 @@ input::-webkit-input-placeholder {
 	right:0;
 	background:rgba(0,0,0,.5);
 	z-index: 200;
+	display:none;
 }
 .caseModal .caseModal_center{
 	position:absolute;
@@ -449,6 +450,7 @@ input::-webkit-input-placeholder {
 	top: 6%;
 	left: 0;
 	right:0;
+	z-index:202;
 }
 .caseModal .layui-icon-close{
 	font-size:26px;
