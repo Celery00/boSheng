@@ -45,7 +45,6 @@ $(function () {
 	$('.container-header .nav .nav_ul').bind('touchstart',function(e){
 		// console.log(1);
 		 e.stopPropagation();
-
 	});
 
 	//顶部轮播图
