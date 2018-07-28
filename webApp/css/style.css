@@ -451,3 +451,7 @@ input::-webkit-input-placeholder {
 	border: 2px solid;
 	border-radius:50%;
 }
+.caseModal .prew,
+.caseModal .next{
+	height:30px;
+}

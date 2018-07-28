@@ -69,6 +69,6 @@ $(function () {
 	var mySwipe2r = new Swiper ('.swiper-container2', {
 	    loop: true,
 	    prevButton:'.swiper-button-prev',
-		nextButton:'.swiper-button-next',
+		nextButton:'.swiper-button-next'
 	  }) 
 })
