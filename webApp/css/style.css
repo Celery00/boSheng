@@ -211,7 +211,7 @@ input::-webkit-input-placeholder {
 }
 .container-header .nav .nav_ul li{
 	border-bottom: 1px solid;
-	line-height:55px;
+	line-height:85px;
 	padding:0 15px;
 }
 .container-header .nav .nav_ul li a{
