@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no"/>
+    <link rel="stylesheet" href="../../layui/css/layui.css">
+	<link rel="stylesheet" href="../../layui/css/layui.mobile.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+	<div class="container-wrap container">
+		<!-- 顶部容器 -->
+		<div class="container-header">
+			<div class="header flex">
+				<i class="layui-icon layui-icon-spread-left"></i>
+				<img src="../../img/min_logo.png" alt="" class="logo">
+				<div class="h2">广州博盛企业管理有限公司</div>
+			</div>
+			<div class="nav">
+				<ul class="nav_ul">
+					<li>
+						<a href="index.html">
+							<span class="pull-left">首页</span>
+							<i class="layui-icon layui-icon-right pull-right"></i>
+						</a>
+					</li>
+					<li>
+						<a href="infomation.html">
+							<span class="pull-left">关于我们</span>
+							<i class="layui-icon layui-icon-right pull-right"></i>
+						</a>						 
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span class="pull-left">资质办理</span>
+							<i class="layui-icon layui-icon-right pull-right"></i>
+						</a>						 
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span class="pull-left">资质转让</span>
+							<i class="layui-icon layui-icon-right pull-right"></i>
+						</a>						 
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span class="pull-left">证书办理</span>
+							<i class="layui-icon layui-icon-right pull-right"></i>
+						</a>						 
+					</li>
+					<li>
+						<a href="javascript:;">
+							<span class="pull-left">人才猎头</span>
+							<i class="layui-icon layui-icon-right pull-right"></i>
+						</a>						 
+					</li>
+					<li>
+						<a href="case.html" class="hover_class">
+							<span class="pull-left">成功案例</span>
+							<i class="layui-icon layui-icon-right pull-right"></i>
+						<a>						 
+					</li>
+					<li>
+						<a href="news.html">
+							<span class="pull-left">资讯报道</span>
+							<i class="layui-icon layui-icon-right pull-right"></i>
+						</a>						 
+					</li>
+					<li>
+						<a href="message.html">
+							<span class="pull-left">联系我们</span>
+							<i class="layui-icon layui-icon-right pull-right"></i>
+						</a>						 
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 内容容器 -->
+		<div class="container-main">
+			<div class="case">
+				<!-- 头部 -->
+				<div class="all_title">
+					<h4>成功案例</h4>
+				</div>
+				<ul class="case_ul flex">
+					<li>
+						<img src="../../img/anli_01.png" alt="">
+						<p>2018.06.08 惠州水印</p>
+					</li>
+					<li>
+						<img src="../../img/anli_01.png" alt="">
+						<p>2018.07.08 惠州水印惠州水印</p>
+					</li>
+					<li>
+						<img src="../../img/anli_01.png" alt="">
+						<p>2018.08.08 惠州水印惠州水印</p>
+					</li>
+					<li>
+						<img src="../../img/anli_01.png" alt="">
+						<p>2018.06.08 惠州水印</p>
+					</li>
+					<li>
+						<img src="../../img/anli_01.png" alt="">
+						<p>2018.07.08 惠州水印惠州水印</p>
+					</li>
+					<li>
+						<img src="../../img/anli_01.png" alt="">
+						<p>2018.08.08 惠州水印惠州水印</p>
+					</li>
+				</ul>
+				<!-- 分页 -->
+				<div id="casePage" align="center"></div>
+			</div>
+			<div class="container-footer">
+				<div class="top"></div>
+				<div class="p">
+					<p>版权所有&copy;广州博盛企业管理有限公司</p>
+					<p>粤ICP备16024287号</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 案例弹框	 -->
+	<div class="caseModal">
+		<div align="center" class="close">
+			<i class="layui-icon layui-icon-close"></i>	
+		</div>
+		<div class="swiper-container case_lunbo">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">
+		        	<img src="../../img/anli_01.png" alt="">
+		        </div>
+		       <div class="swiper-slide">
+		        	<img src="../../img/anli_01.png" alt="">
+		        </div>
+		        <div class="swiper-slide">
+		        	<img src="../../img/anli_01.png" alt="">
+		        </div>
+		    </div>
+		    <!-- 如果需要导航按钮 -->
+		    <div class="swiper-button-prev prew"></div>
+		    <div class="swiper-button-next next"></div>
+		</div>		
+	</div>	
+	<!-- 回到顶部 -->
+	<ul class="layui-fixbar">
+		<li class=" layui-icon layui-fixbar-top" lay-type="top" style="background-color: rgba(167, 168, 168,.5)" ></li>
+	</ul>
+
+	<!-- 引入js文件 -->
+	<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+	<script src="../../layui/layui.all.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+	<script type="text/javascript" src="../js/fastclick.min.js"></script>
+	<script src="../js/index.js"></script>
+
+</body>
+</html>

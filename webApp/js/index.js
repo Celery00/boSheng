@@ -57,7 +57,7 @@ $(function () {
 	});
 
 	// 案例弹框的显示
-	$(document).on('click','.anli .anli_ul li',function(){
+	$(document).on('click','.anli .anli_ul li,.case .case_ul li',function(){
 		$('.caseModal').show();
 		$('body').addClass('overflow');
 	});
@@ -72,5 +72,21 @@ $(function () {
 		nextButton:'.swiper-button-next',
 		observer: true,//修改swiper自己或子元素时，自动初始化swiper
         observeParents: true,//修改swiper的父元素时，自动初始化swiper
+	});
+	var mySwiper2 = new Swiper ('.case_lunbo', {
+	    prevButton:'.swiper-button-prev',
+		nextButton:'.swiper-button-next',
+		observer: true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents: true,//修改swiper的父元素时，自动初始化swiper
+	});
+
+	// 分页
+	layui.use('laypage', function(){
+	  var laypage = layui.laypage;
+	  //执行一个laypage实例
+	  laypage.render({
+	    elem: 'casePage' //注意，这里的 test1 是 ID，不用加 # 号
+	    ,count: 40 //数据总数，从服务端得到
+	  });
 	});
 })

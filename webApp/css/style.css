@@ -417,7 +417,8 @@ input::-webkit-input-placeholder {
 	height:100%;
 	display:none;
 }
-.caseModal .anli_lunbo{
+.caseModal .anli_lunbo,
+.caseModal .case_lunbo{
 	height:100%;
 	text-align:center;
 }
@@ -441,7 +442,7 @@ input::-webkit-input-placeholder {
 	z-index:202;
 }
 .caseModal .layui-icon-close{
-	font-size:26px;
+	font-size:30px;
 	color: #fff;
 	border: 2px solid;
 	border-radius:50%;
@@ -450,4 +451,46 @@ input::-webkit-input-placeholder {
 .caseModal .next{
 	height:30px;
 	cursor:pointer;
+}
+
+/*案例页面*/
+.case,.message,.infomation,.news,.newsDetails{
+  background:url(../../img/back1.jpg);
+  min-height: 500px;
+}
+.all_title{
+	border-bottom: 1px solid #f0f0f0;
+	padding:10px 2px;
+}
+.all_title h4{
+	border-left: 4px solid #676767;
+	color: #676767;
+	padding:0 15px;
+}
+
+.case .case_ul{
+  padding:10px 0;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap:wrap;
+
+}
+.case .case_ul li{
+  cursor:pointer;
+  width: 50%;
+  padding:5px 10px;
+  text-align:center;
+  font-size:14px;
+  color:#fff;
+  line-height:30px;
+}
+.case .case_ul li p{
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.case .case_ul li img{
+  width: 100%;
 }
