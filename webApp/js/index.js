@@ -66,8 +66,9 @@ $(function () {
 		$('body').removeClass('overflow');
 	});
 	// 案例弹框轮播
-	var mySwipe2r = new Swiper ('.swiper-container2', {
-	    loop: true,
+	var mySwiper2 = new Swiper ('.swiper-container2', {
+	    // loop: true,
+	    pagination: '.swiper-pagination2',
 	    prevButton:'.swiper-button-prev',
 		nextButton:'.swiper-button-next'
 	  }) 

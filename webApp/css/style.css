@@ -424,8 +424,9 @@ input::-webkit-input-placeholder {
 	bottom:0;
 }
 .caseModal .caseModal_center .anli_lunbo{
-	background:none;
+	// background:none;
 	height:100%;
+	text-align:center;
 }
 .caseModal .caseModal_center  img{
 	position:absolute;
