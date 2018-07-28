@@ -34,7 +34,7 @@ $(function () {
 		// $('.container-wrap').removeClass('overflow');
 		$('.container-main').animate({marginLeft:'0'});
 	});
-	$(document).on('mousemove','.container-header .nav',function(){
+	$(document).on('touchend','.container-header .nav',function(){
 		$(this).animate({width:'0'});
 		$('.header .layui-icon').removeClass('layui-icon-shrink-right').addClass('layui-icon-spread-left');
 		// $('.container-wrap').removeClass('overflow');
