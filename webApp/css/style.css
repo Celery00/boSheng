@@ -388,11 +388,12 @@ input::-webkit-input-placeholder {
 
 /*底部*/
 .container-footer{
+	padding:10px 0;
 	background:url(../../img/back1.jpg);
 }
 .container-footer .top{
 	background: rgb(39,43,36);
-	line-height:30px;
+	height:20px;
 }
 .container-footer .p{
 	line-height:26px;
