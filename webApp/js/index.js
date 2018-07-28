@@ -119,9 +119,23 @@ $(function () {
 	});
 	// 换样式
 	$(document).on('click','.all_ul li a',function(){
+		var text=$(this).text();
+		$('.all_title h4').text(text);
 		$('.all_ul li a').removeClass('text_di');
 		$(this).addClass('text_di');
 		allNavShow();
 	})
+
+	// 提交留言
+	$(document).on('click','.message_form .form_btn button',function(){
+		if($('.message_form .name').val()==""){
+			// console.log("00")
+			layer.msg('请输入称呼!');
+		}else if($('.message_form .phone').val()==""){
+			layer.msg('请输入电话号码!');
+		}else if($('.message_form textarea').val()==""){
+			layer.msg('请输入写留言!');
+		}
+	});
 
 })

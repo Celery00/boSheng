@@ -498,7 +498,7 @@ input::-webkit-input-placeholder {
 	padding:0 15px;
 	color: #eee;
 	font-size:15px;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #555;
 }
 .all_nav .all_ul li a.text_di{
 	border-left: 4px solid #676767;
@@ -586,4 +586,43 @@ input::-webkit-input-placeholder {
 .message_map .map_img{
   margin-top:10px;
   width: 100%;
+}
+
+/*联系我们*/
+.message_form .form_item{
+  line-height:30px;
+  margin:15px 0;
+}
+.message_form .form_item span:nth-child(1){
+  width: 80px;
+  text-align: right;
+  margin-right: 15px;
+  font-size:12px;
+  color:#fff;
+}
+.message_form .form_item input{
+  width: 180px;
+  margin-right:5px;
+}
+.message_form .form_item  textarea{
+  resize:none;
+  width: 180px;
+  height: 100px;
+  line-height:25px;
+  margin-right:5px;
+}
+.message_form .form_item .botton{
+  line-height:190px;
+  height: 100px;
+}
+.form_btn button{
+  margin-top:20px;
+  margin-left:95px;
+  width: 100px;
+  text-align:center;
+  line-height:30px;
+  color:#fff;
+  font-size:12px;
+  background:rgb(62,72,55);
+  cursor:pointer;
 }
