@@ -82,12 +82,21 @@ $(function () {
         observeParents: true,//修改swiper的父元素时，自动初始化swiper
 	});
 
-	// 分页
+	// 案例分页
 	layui.use('laypage', function(){
 	  var laypage = layui.laypage;
 	  //执行一个laypage实例
 	  laypage.render({
 	    elem: 'casePage' //注意，这里的 test1 是 ID，不用加 # 号
+	    ,count: 40 //数据总数，从服务端得到
+	  });
+	});
+	// 新闻分页
+	layui.use('laypage', function(){
+	  var laypage = layui.laypage;
+	  //执行一个laypage实例
+	  laypage.render({
+	    elem: 'newsPage' //注意，这里的 test1 是 ID，不用加 # 号
 	    ,count: 40 //数据总数，从服务端得到
 	  });
 	});
