@@ -65,21 +65,12 @@ $(function () {
 		$('.caseModal').hide();
 		$('body').removeClass('overflow');
 	});
-	// 案例弹框轮播
-	// var mySwiper2 = new Swiper ('.anli_lunbo', {
-	// 	autoplay: 3000,
-	//     loop: true,
-	//     pagination: '.swiper-pagination',
-	//     prevButton:'.swiper-button-prev',
-	// 	nextButton:'.swiper-button-next'
-	//   }) 
 
+	// 案例弹框
 	var mySwiper = new Swiper ('.anli_lunbo', {
-		// autoplay: 3000,
-	 //    loop: true,
-	    // 分页器
-	    // pagination: '.swiper-pagination',
 	    prevButton:'.swiper-button-prev',
-		nextButton:'.swiper-button-next'
+		nextButton:'.swiper-button-next',
+		observer: true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents: true,//修改swiper的父元素时，自动初始化swiper
 	});
 })

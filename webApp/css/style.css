@@ -414,12 +414,14 @@ input::-webkit-input-placeholder {
 	right:0;
 	background:rgba(0,0,0,.5);
 	z-index: 200;
+	height:100%;
 	display:none;
 }
 .caseModal .anli_lunbo{
 	height:100%;
 	text-align:center;
 }
+
 .caseModal img{
 	// position:absolute;
 	// left: 0;
