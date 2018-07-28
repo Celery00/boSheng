@@ -34,7 +34,7 @@ $(function () {
 		// $('.container-wrap').removeClass('overflow');
 		$('.container-main').animate({marginLeft:'0'});
 	});
-	$(document).bind('touchstart','.container-header .nav',function(){
+	$(document).on('touchstart','.container-header .nav',function(){
 		console.log(0);
 		$(this).animate({width:'0'});
 		$('.header .layui-icon').removeClass('layui-icon-shrink-right').addClass('layui-icon-spread-left');
