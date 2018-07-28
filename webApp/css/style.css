@@ -416,27 +416,19 @@ input::-webkit-input-placeholder {
 	z-index: 200;
 	display:none;
 }
-.caseModal .caseModal_center{
-	position:absolute;
-	top: 0;
-	left:0;
-	right:0;
-	bottom:0;
-}
-.caseModal .caseModal_center .anli_lunbo{
-	// background:none;
+.caseModal .anli_lunbo{
 	height:100%;
 	text-align:center;
 }
-.caseModal .caseModal_center  img{
-	position:absolute;
-	left: 0;
-	top: 50%;
-	right:0;
-	transform:translateY(-50%);
-	-webkit-transform:translateY(-50%);
-	width: 80%;
-	margin:0 auto;
+.caseModal img{
+	// position:absolute;
+	// left: 0;
+	// top: 50%;
+	// right:0;
+	// transform:translateY(-50%);
+	// -webkit-transform:translateY(-50%);
+	width: 90%;
+	margin:20% auto;
 }
 
 .caseModal .close{

@@ -48,7 +48,7 @@ $(function () {
 	});
 
 	//顶部轮播图
-	var mySwiper = new Swiper ('.swiper-container', {
+	var mySwiper = new Swiper ('.banner', {
 		autoplay: 3000,
 	    loop: true,
 	    // 分页器
@@ -66,10 +66,20 @@ $(function () {
 		$('body').removeClass('overflow');
 	});
 	// 案例弹框轮播
-	var mySwiper2 = new Swiper ('.swiper-container2', {
-	    // loop: true,
-	    pagination: '.swiper-pagination2',
+	// var mySwiper2 = new Swiper ('.anli_lunbo', {
+	// 	autoplay: 3000,
+	//     loop: true,
+	//     pagination: '.swiper-pagination',
+	//     prevButton:'.swiper-button-prev',
+	// 	nextButton:'.swiper-button-next'
+	//   }) 
+
+	var mySwiper = new Swiper ('.anli_lunbo', {
+		// autoplay: 3000,
+	 //    loop: true,
+	    // 分页器
+	    // pagination: '.swiper-pagination',
 	    prevButton:'.swiper-button-prev',
 		nextButton:'.swiper-button-next'
-	  }) 
+	});
 })
