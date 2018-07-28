@@ -402,3 +402,57 @@ input::-webkit-input-placeholder {
 	text-align:center;
 	font-size:12px;
 }
+
+/*案例轮播弹框*/
+.caseModal{
+	position:fixed;
+	top: 0;
+	bottom:0;
+	left: 0;
+	right:0;
+	background:rgba(0,0,0,.5);
+	z-index: 200;
+}
+.caseModal .caseModal_center{
+	position:absolute;
+	top: 0;
+	left:0;
+	right:0;
+	bottom:0;
+}
+.caseModal .caseModal_center #anli_lunbo{
+	background:none;
+}
+#anli_lunbo .layui-carousel-arrow{
+	border: 1px solid #fff;
+}
+#anli_lunbo.layui-carousel>[carousel-item]>*{
+  background:none;
+  text-align:center;
+}
+#anli_lunbo.layui-carousel>[carousel-item]:before{
+  content:'';
+}
+.caseModal .caseModal_center .img img{
+	position:absolute;
+	left: 0;
+	top: 50%;
+	right:0;
+	transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	width: 80%;
+	margin:0 auto;
+}
+
+.caseModal .close{
+	position:absolute;
+	top: 6%;
+	left: 0;
+	right:0;
+}
+.caseModal .layui-icon-close{
+	font-size:26px;
+	color: #fff;
+	border: 2px solid;
+	border-radius:50%;
+}

@@ -24,14 +24,14 @@ $(function () {
 	$(document).on('click','.header .layui-icon.layui-icon-spread-left',function(){
 		$('.container-header .nav').animate({width:'100%'});
 		$(this).removeClass('layui-icon-spread-left').addClass('layui-icon-shrink-right');
-		// $('.container-wrap').addClass('overflow');
+		$('.container-wrap').addClass('overflow');
 		$('.container-main').animate({marginLeft:'60%'});
 	});
 	// 隐藏
 	$(document).on('click','.header .layui-icon.layui-icon-shrink-right',function(){
 		$('.container-header .nav').animate({width:'0'});
 		$(this).removeClass('layui-icon-shrink-right').addClass('layui-icon-spread-left');
-		// $('.container-wrap').removeClass('overflow');
+		$('.container-wrap').removeClass('overflow');
 		$('.container-main').animate({marginLeft:'0'});
 	});
 	
@@ -39,7 +39,7 @@ $(function () {
 		// console.log(0);
 		$('.container-header .nav').animate({width:'0'});
 		$('.header .layui-icon').removeClass('layui-icon-shrink-right').addClass('layui-icon-spread-left');
-		// $('.container-wrap').removeClass('overflow');
+		$('.container-wrap').removeClass('overflow');
 		$('.container-main').animate({marginLeft:'0'});
 	});
 	$('.container-header .nav .nav_ul').bind('touchstart',function(e){
@@ -55,4 +55,19 @@ $(function () {
 	    pagination: '.swiper-pagination',
 
 	});
+
+	// 案例弹框轮播
+	layui.use('carousel', function(){
+	  	var carousel = layui.carousel;
+	  	//建造实例
+	  	carousel.render({
+	    	elem: '#anli_lunbo'
+	    	,width: '100%' //设置容器宽度
+	    	,height:'100%' 
+	    	,autoplay:false 
+	    	,arrow: 'always' //始终显示箭头
+	    	,anim: 'default' //切换动画方式
+	    	,indicator:'none'
+	  	});
+	 });
 })

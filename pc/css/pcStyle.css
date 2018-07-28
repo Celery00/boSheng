@@ -397,7 +397,8 @@ input::-webkit-input-placeholder {
   // -moz-justify-content:space-between;
 }
 #anli_01 .layui-carousel-arrow,
-#anli_02 .layui-carousel-arrow{
+#anli_02 .layui-carousel-arrow,
+#anli_lunbo .layui-carousel-arrow{
   border:1px solid;
 }
 #anli_01.layui-carousel>[carousel-item]>*,
