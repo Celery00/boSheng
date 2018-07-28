@@ -179,11 +179,12 @@ input::-webkit-input-placeholder {
 }
 .container-header .header .layui-icon{
 	font-size:20px;
+	padding:0 10px;
 }
 .container-header .header .logo{
   height:27px;
   vertical-align:middle;
-  margin:0 10px;
+  margin-right:8px;
 }
 .container-header .header .h2{
 	font-weight:bold;
