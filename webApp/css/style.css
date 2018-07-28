@@ -284,6 +284,7 @@ input::-webkit-input-placeholder {
 	float:left;
 	height:100%;
 	margin-right:10px; 
+	cursor: pointer;
 }
 .anli_ul li img{
 	width: 142px;
