@@ -35,7 +35,7 @@ $(function () {
 		$('.container-main').animate({marginLeft:'0'});
 	});
 	$(document).bind('touchstart',function(e){
-		 // e.preventDefault();
+		 e.stopPropagation()
 		console.log(0);
 		$('.container-header .nav').animate({width:'0'});
 		$('.header .layui-icon').removeClass('layui-icon-shrink-right').addClass('layui-icon-spread-left');
