@@ -24,14 +24,21 @@ $(function () {
 	$(document).on('click','.header .layui-icon.layui-icon-spread-left',function(){
 		$('.container-header .nav').animate({width:'100%'});
 		$(this).removeClass('layui-icon-spread-left').addClass('layui-icon-shrink-right');
+		$('.container-wrap').addClass('overflow');
+		$('.container-main').animate({marginLeft:'60%'});
 	});
+	// 隐藏
 	$(document).on('click','.header .layui-icon.layui-icon-shrink-right',function(){
 		$('.container-header .nav').animate({width:'0'});
 		$(this).removeClass('layui-icon-shrink-right').addClass('layui-icon-spread-left');
+		$('.container-wrap').removeClass('overflow');
+		$('.container-main').animate({marginLeft:'0'});
 	});
 	$(document).on('click','.container-header .nav',function(){
 		$(this).animate({width:'0'});
 		$('.header .layui-icon').removeClass('layui-icon-shrink-right').addClass('layui-icon-spread-left');
+		$('.container-wrap').removeClass('overflow');
+		$('.container-main').animate({marginLeft:'0'});
 	});
 
 	//顶部轮播图
