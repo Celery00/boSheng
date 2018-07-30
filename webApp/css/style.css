@@ -436,13 +436,13 @@ input::-webkit-input-placeholder {
 
 .caseModal .close{
 	position:absolute;
-	top: 6%;
+	top: 4%;
 	left: 0;
 	right:0;
 	z-index:202;
 }
 .caseModal .layui-icon-close{
-	font-size:30px;
+	font-size:28px;
 	color: #fff;
 	border: 2px solid;
 	border-radius:50%;

@@ -37,14 +37,14 @@ $(function () {
 		$('.container-main').animate({marginLeft:'0'});
 	});
 	
-	$('.container-header .nav').bind('touchstart',function(e){
+	$(document).on('touchstart','.container-header .nav',function(){
 		// console.log(0);
 		$('.container-header .nav').animate({width:'0'});
 		$('.header .layui-icon').removeClass('layui-icon-shrink-right').addClass('layui-icon-spread-left');
 		$('.container-wrap').removeClass('overflow');
 		$('.container-main').animate({marginLeft:'0'});
 	});
-	$('.container-header .nav .nav_ul').bind('touchstart',function(e){
+	$(document).on('touchstart','.container-header .nav .nav_ul',function(e){
 		// console.log(1);
 		 e.stopPropagation();
 	});
@@ -118,11 +118,11 @@ $(function () {
 		$('.container-main').animate({marginLeft:'0'});
 	}
 	
-	$('.all_nav').bind('touchstart',function(e){
+	$(document).on('touchstart','.all_nav',function(e){
 		// console.log(0);
 		allNavShow();
 	});
-	$('.all_ul').bind('touchstart',function(e){
+	$(document).on('touchstart','.all_ul',function(e){
 		// console.log(1);
 		 e.stopPropagation();
 	});
