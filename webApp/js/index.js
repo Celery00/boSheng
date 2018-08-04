@@ -28,6 +28,7 @@ $(function () {
 		$('.container-main').animate({marginLeft:'60%'});
 		$('.all_nav').animate({width:'0'});
 		$('.all_title .layui-icon').removeClass('layui-icon-spread-left').addClass('layui-icon-shrink-right');
+		$('.footer-tab').animate({marginLeft:'60%',right:'-60%'});
 	});
 	// 隐藏
 	$(document).on('click','.header .layui-icon.layui-icon-shrink-right',function(){
@@ -35,6 +36,7 @@ $(function () {
 		$(this).removeClass('layui-icon-shrink-right').addClass('layui-icon-spread-left');
 		$('.container-wrap').removeClass('overflow');
 		$('.container-main').animate({marginLeft:'0'});
+		$('.footer-tab').animate({marginLeft:'0',right:'0'});
 	});
 	
 	$(document).on('touchstart','.container-header .nav',function(){
@@ -43,6 +45,7 @@ $(function () {
 		$('.header .layui-icon').removeClass('layui-icon-shrink-right').addClass('layui-icon-spread-left');
 		$('.container-wrap').removeClass('overflow');
 		$('.container-main').animate({marginLeft:'0'});
+		$('.footer-tab').animate({marginLeft:'0',right:'0'});
 	});
 	$(document).on('touchstart','.container-header .nav .nav_ul',function(e){
 		// console.log(1);
@@ -108,6 +111,7 @@ $(function () {
 		$(this).removeClass('layui-icon-shrink-right').addClass('layui-icon-spread-left');
 		$('.container-wrap').addClass('overflow');
 		$('.container-main').animate({marginLeft:'-60%'});
+		$('.footer-tab').animate({marginRight:'-60%',left:'-60%'});
 	});
 
 	// 隐藏
@@ -116,6 +120,7 @@ $(function () {
 		$('.all_title .layui-icon').removeClass('layui-icon-spread-left').addClass('layui-icon-shrink-right');
 		$('.container-wrap').removeClass('overflow');
 		$('.container-main').animate({marginLeft:'0'});
+		$('.footer-tab').animate({marginRight:'0',left:'0'});
 	}
 	
 	$(document).on('touchstart','.all_nav',function(e){
