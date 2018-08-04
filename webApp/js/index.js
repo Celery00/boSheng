@@ -147,4 +147,15 @@ $(function () {
 		}
 	});
 
+	//电话弹框
+	$(document).on('click','.footer-tab .layui-icon-cellphone',function(){
+		$('.phoneModal').show();	
+	});
+	$(document).on('click','.phoneModal',function(){
+		$('.phoneModal').hide();	
+	});
+	$(document).on('click','.phoneModal .phoneModal-center',function(e){
+		e.stopPropagation();
+	});
+
 })

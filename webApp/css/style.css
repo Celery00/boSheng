@@ -158,7 +158,9 @@ input::-webkit-input-placeholder {
   max-width: 750px;
   margin:0 auto;
 }
-
+.layui-fixbar{
+  bottom:55px;
+}
 /* 顶部容器 */
 .container-header{
   // background: #fff;
@@ -229,6 +231,7 @@ input::-webkit-input-placeholder {
 /*内容容器*/
 .container-main{
 	padding-top:47px;
+  padding-bottom: 50px;
 	width: 100%;
 }
 
@@ -707,4 +710,61 @@ input::-webkit-input-placeholder {
   font-size:12px;
   line-height:24px;
   cursor:pointer;
+}
+
+/*底部*/
+.footer-tab{
+  position: fixed;
+  left:0;
+  right:0;
+  bottom:0;
+  background:url(../../img/back1.jpg);
+  height:50px;
+  border-top: 1px solid #555;
+  z-index: 20;
+}
+.footer-tab .item{
+  flex:1;
+  -webkkit-flex:1;
+  color: #fff;
+  font-size:14px;
+  text-align:center;
+  line-height:22px;
+  margin-top:3px;
+}
+.footer-tab .item a{
+  display:block;
+  color: #fff;
+}
+/*电话弹框*/
+.phoneModal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom:0;
+  z-index:30;
+  background:rgba(0,0,0,0.5);
+  display: none;
+}
+.phoneModal .phoneModal-center{
+  position: absolute;
+  bottom:0;
+  left: 0;
+  right:0;
+  text-align:center;
+  font-size:14px;
+  color: #666;
+  padding-bottom:50px;
+  background:#eee;
+}
+.phoneModal .phoneModal-center h3{
+  background:#eee;
+  line-height:40px;
+}
+.phoneModal .phoneModal-center a{
+  display:block;
+  background:#fff;
+  line-height:40px;
+  border-top: 1px solid #eee;
 }
