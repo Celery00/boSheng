@@ -200,7 +200,6 @@
 		    var scale = new AMap.Scale(),
 		    //工具条（左上，可以使用工具条进行上下左右和缩放）
 		    toolBar = new AMap.ToolBar(),
-
 			map = new AMap.Map('myMap', {
 			    zoom: 15,//缩放层级
 			    center:center,//当前地图中心点
@@ -211,11 +210,6 @@
 		    map.addControl(scale);
 		    map.addControl(toolBar);
 
-			 var icon = new AMap.Icon({
-			        image : 'http://vdata.amap.com/icons/b18/1/2.png',//图片大小为24px*24px
-			        //icon可缺省，缺省时为默认的蓝色水滴图标，
-			        size : new AMap.Size(24,24)
-			});
 			 marker = new AMap.Marker({
 			 	// icon: icon, //图标可以用简单的图片路径,不设置就默认图标
 				position: center,		//点标记在地图上显示的位置，默认为地图中心点
