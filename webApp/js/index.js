@@ -111,7 +111,7 @@ $(function () {
 		$(this).removeClass('layui-icon-shrink-right').addClass('layui-icon-spread-left');
 		$('.container-wrap').addClass('overflow');
 		$('.container-main').animate({marginLeft:'-60%'});
-		$('.footer-tab').animate({marginRight:'-60%',left:'-60%'});
+		$('.footer-tab').animate({marginRight:'60%',left:'-60%'});
 	});
 
 	// 隐藏
