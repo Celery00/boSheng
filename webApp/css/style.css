@@ -754,9 +754,6 @@ input::-webkit-input-placeholder {
   right:0;
   text-align:center;
   font-size:14px;
-  color: #666;
-  padding-bottom:50px;
-  background:#eee;
 }
 .phoneModal .phoneModal-center h3{
   background:#eee;
@@ -767,4 +764,9 @@ input::-webkit-input-placeholder {
   background:#fff;
   line-height:40px;
   border-top: 1px solid #eee;
+}
+.phoneModal .phoneModal-center .btn{
+  background:#eee;
+  color: #ccc;
+  line-height:50px;
 }
