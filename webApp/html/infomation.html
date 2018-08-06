@@ -196,7 +196,8 @@
 	<script src="../js/index.js"></script>
 	<script>
 		$(function(){
-			var center= new AMap.LngLat(111.982241,21.847487);
+			// 定位的经纬度(暂时是以广州天河体育中心)
+			var center = new AMap.LngLat(113.324691,23.1373);
 			//比例尺(左下，代表地图中的一厘米对应实际的距离)
 		    var scale = new AMap.Scale(),
 		    //工具条（左上，可以使用工具条进行上下左右和缩放）
@@ -215,14 +216,10 @@
 			 	// icon: icon, //图标可以用简单的图片路径,不设置就默认图标
 				position: center,		//点标记在地图上显示的位置，默认为地图中心点
 				// offset: new AMap.Pixel(-10,-34),//位置偏移量，默认值为Pixel(-10，-34),(0,0)时marker左上角对准position的位置
-				title: "公司",		//鼠标滑过标记时的文字提示，不设置则鼠标滑过时没有文字提示
+				title: "广州天河体育中心",		//鼠标滑过标记时的文字提示，不设置则鼠标滑过时没有文字提示
 				map: map			//要显示该Marker的地图对象
 			});
 
-			//  map.on('click',function(e){
-			// 	//将当前点击的经纬度赋值到文本框
-			// 	console.log(e.lnglat.getLng() +","+e.lnglat.getLat());
-			// })
 		})
 	</script>
 </body>
