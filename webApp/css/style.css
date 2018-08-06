@@ -733,11 +733,9 @@ input::-webkit-input-placeholder {
   text-align:center;
   line-height:22px;
   margin-top:3px;
-}
-.footer-tab .item a{
-  display:block;
   color: #fff;
 }
+
 /*电话弹框*/
 .phoneModal{
   position: fixed;
