@@ -6,7 +6,7 @@
 
 $(function(){
 	//顶部轮播图
-	var mySwiper = new Swiper ('.swiper-container', {
+	var mySwiper = new Swiper ('.banner', {
 		autoplay: 3000,
 	    loop: true,
 	    // 分页器
@@ -22,30 +22,20 @@ $(function(){
 	});
 
 	// 案例轮播图
-	layui.use('carousel', function(){
-	  	var carousel = layui.carousel;
-	  	//建造实例
-	  	carousel.render({
-	    	elem: '#anli_01'
-	    	,width: '610px' //设置容器宽度
-	    	,height:'300px'
-	    	,autoplay:false 
-	    	,arrow: 'always' //始终显示箭头
-	    	,anim: 'default' //切换动画方式
-	    	,indicator:'none'
-	  	});
+	var mySwiper = new Swiper ('#anli_01', {
+	    slidesPerView : 2,
+	    slidesPerGroup:2,
+		spaceBetween : 60,
+		prevButton:'.prev1',
+		nextButton:'.next1',
 	});
-	layui.use('carousel', function(){
-	  	var carousel = layui.carousel;
-	  	//建造实例
-	  	carousel.render({
-	    	elem: '#anli_02'
-	    	,width: '100%' //设置容器宽度
-	    	,height:'300px' 
-	    	,arrow: 'always' //始终显示箭头
-	    	,anim: 'default' //切换动画方式
-	    	,indicator:'none'
-	  	});
+	var mySwiper = new Swiper ('#anli_02', {
+		autoplay: 3000,
+	    slidesPerView : 4,
+	    slidesPerGroup:4,
+		spaceBetween : 60,
+		prevButton:'.prev2',
+		nextButton:'.next2',
 	});
 
 	// 案例弹框轮播
