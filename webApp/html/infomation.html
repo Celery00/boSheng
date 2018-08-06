@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../../layui/css/layui.css">
 	<link rel="stylesheet" href="../../layui/css/layui.mobile.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+	<link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/>
 	<link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
@@ -218,10 +219,10 @@
 				map: map			//要显示该Marker的地图对象
 			});
 
-			 map.on('click',function(e){
-				//将当前点击的经纬度赋值到文本框
-				console.log(e.lnglat.getLng() +","+e.lnglat.getLat());
-			})
+			//  map.on('click',function(e){
+			// 	//将当前点击的经纬度赋值到文本框
+			// 	console.log(e.lnglat.getLng() +","+e.lnglat.getLat());
+			// })
 		})
 	</script>
 </body>
