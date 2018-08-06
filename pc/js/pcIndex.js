@@ -31,6 +31,7 @@ $(function(){
 	});
 	var mySwiper = new Swiper ('#anli_02', {
 		autoplay: 3000,
+		// loop: true,
 	    slidesPerView : 4,
 	    slidesPerGroup:4,
 		spaceBetween : 60,
